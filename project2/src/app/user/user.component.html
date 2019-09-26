@@ -1,0 +1,24 @@
+<div class="c">
+
+<h2 style="lighting-color: aqua">User</h2>
+<sub>
+    <ul> 
+    <li>siva</li>
+    <li>jaya</li>
+    </ul>
+    </sub>
+        <div>
+            
+            <input type='text' id='inputTask' #in  [(ngModel)]="list"/>
+            <input type='button' (click)='addText(list)' value='Add '/>
+            <p *ngFor="let first of todo; let i= index" >{{i+1}}   {{first}} </p>
+            <!-- <app-todo></-todo> -->
+          </div> 
+    
+
+    <!-- <input type='text' #in  [(ngModel)]="list"/>
+    <input type="text"> --> 
+    <!-- <input type ="text" #in  [(ngModel)]="list" button type='button' (click)='addText(list)' value='Add '>
+    <p *ngFor="let first of todo">{{todo}} </p>  -->
+    
+</div>

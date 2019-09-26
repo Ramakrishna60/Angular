@@ -1,0 +1,9 @@
+div.b {
+    position: absolute;
+    right: 650px;  
+    border: 3px solid green;
+    top: 100px;
+    bottom: 100px;
+    width: 300px;
+    height: 230px;
+  }

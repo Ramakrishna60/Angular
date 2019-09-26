@@ -1,0 +1,22 @@
+<app-parent [uname]="username">
+</app-parent>
+<app-child (notify)="parentmethod($event)">
+</app-child>
+<p>{{ childdata}}</p>
+
+<div style="text-align:center">
+    <h2>{{title}}</h2>
+    <div first>
+                                          <!-- <p [ngModel]="name"> {{ name}}</p> -->
+
+      {{today}} 
+     <!-- <p>
+        {{newcomponent}}
+     </p>  -->
+
+     <p class="qcont">word, another word</p>
+      <p>
+     {{ hey }}
+     </p>
+    </div>
+ </div>

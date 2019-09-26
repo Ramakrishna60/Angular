@@ -1,0 +1,25 @@
+
+
+
+
+<div class="b">
+
+<h2>Email</h2>
+<sub>
+<ul> 
+<li>siva.madduri@fissionlabs.in</li>
+<li>jaya.lakkoju@fissionslabs.in</li>
+</ul>
+</sub>
+
+<div>
+            
+    <input type='text'  #in  [(ngModel)]="list"/>
+    <input type='button' (click)='addText(list)' value='Add '/>
+    <p *ngFor="let first of todo">{{first}} </p>
+    <!-- <app-todo></-todo> -->
+  </div>
+</div>
+
+
+

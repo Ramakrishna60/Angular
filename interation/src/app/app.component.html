@@ -1,0 +1,11 @@
+<div>
+  <h3 *ngFor="let item of x; let i = index">
+  <!-- {{i+1}} {{item}} -->
+  </h3>
+  <app-test (childEvent)="parentEvent($event)" >
+    <!-- <ng-content>
+      this
+    </ng-content> -->
+  </app-test>
+  <app-second [greet]="x"></app-second>
+</div>
