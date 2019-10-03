@@ -1,0 +1,47 @@
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"></a>
+  
+  <ul class="navbar-nav  ">
+    
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li> -->
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+       <a class="dropdown-item" routerLink="shoe">Shoes</a>
+        <a class="dropdown-item" routerLink="clothes">Clothes</a>
+        
+      </div>
+    </li>
+    </ul>
+    <ul  class="ml-auto">
+        <a class="fa fa-shopping-cart" style="font-size:35px;color:yellowgreen" routerLink="home">cart{{ arr.length }}</a>
+        <!-- < class="fa fa-shopping-cart" style="font-size:48px;color:green"> -->
+    </ul>
+
+</nav>
+<!-- <footer> Footer</footer>  -->
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+<router-outlet>
+</router-outlet>
+
+
+<!-- <div>
+  <ul>
+    <li class="active"><a href="app.component.html">Home</a></li>
+    <li><a href="shoe.component.html">Shoes</a></li>
+    <li><a href="clothes.component.html">Clothes</a></li>
+   
+  </ul>
+</div> -->
+

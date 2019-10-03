@@ -1,0 +1,67 @@
+
+        <!-- <img src="assets/buttonmzon.jpeg" height="100px"> -->
+        <!-- <img src="assets/amzon.jpeg" alt="amzon" style="width:20%;">
+
+        <div class="row">
+                <div class="col-sm-3">
+       <div class="card" style="width: 18rem;">
+        <img src="assets/shoe.jpg" class="card-img-top" alt="..."height="300px">
+        <div class="card-body">
+          <button class="btn btn-primary" (click)="passdata()">Add To Cart</button>
+        </div>
+      </div>
+     </div>
+      <div class="col-sm-3">
+      <div class="card" style="width: 18rem;"> 
+            <img src="assets/shoe.jpg" class="card-img-top" alt="..."height="300px">
+            <div class="card-body">
+              <button class="btn btn-primary" (click)="passdata()">Add To Cart</button>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3">
+                <div class="card" style="width: 18rem;"> 
+                      <img src="assets/shoe.jpg" class="card-img-top" alt="..."height="300px">
+                      <div class="card-body">
+                        <button class="btn btn-primary" (click)="passdata()">Add To Cart</button>
+                      </div>
+                    </div>
+                    </div> -->
+                    <img src="assets/amzon.jpeg" alt="amzon" style="width:20%;">
+                    <div class="row" >
+                            <div class="col-sm-3" *ngFor="let shoe of shoes">
+                                    <div class="card" style="width: 18rem;"> 
+                                          <!-- <img src="assets/shoe.jpg" class="card-img-top" alt="..."height="100px"> -->
+                                          <div class="card-body">
+                                                <div>
+                                                    
+                                                      <img src="{{shoe.image}}"width="250px"height ="250px">
+                                                    <p> {{shoe.name}}</p>
+                                                    <p>{{shoe.price}}</p>
+                                            <button  class="btn btn-primary"(click)="passdata(shoe)">Add To Cart</button>
+                                          </div>
+                                        </div>
+                                        </div>
+                  </div> 
+                    </div>
+                    
+
+
+
+<!-- <p>shoe works</p>
+<img src="assets/shoe.jpg"width="250px"height ="250px">
+<div  *ngFor="let shoe of shoes">
+        
+              <img src = "{{shoe.image}}" width="250px"height ="250px">
+                
+    <button type="button" class="btn btn-success" (click)="passdata(shoe)">Add</button></div>  -->
+<!-- <div><button mat-fab>Fab</button></div> --> 
+
+<!-- <script>
+        function myFunction() {
+          var x = document.createElement("BUTTON");
+          var t = document.createTextNode("Click me");
+          x.appendChild(t);
+          document.body.appendChild(x);
+        }
+        </script> -->

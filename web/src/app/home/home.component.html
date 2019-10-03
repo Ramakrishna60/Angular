@@ -1,0 +1,24 @@
+
+<!-- <p>You have {{carts.length}} items in your bag</p> -->
+<img src="assets/amzon.jpeg" alt="amzon" style="width:20%;">
+ <div class="row">
+        <div class="col-sm-3" *ngFor="let arr of arrray; let i= index">
+                <div class="card" style="width: 18rem;"> 
+                      <!-- <img src="assets/shoe.jpg" class="card-img-top" alt="..."height="100px"> -->
+                      <div class="card-body">
+                            <div>
+                                
+                                  <img src="{{arr.image}}"width="250px"height ="250px">
+                                   <p>{{arr.name}}</p>
+                                  <p>{{arr.price}}</p>
+                        <!-- <button  class="btn btn-primary"(click)="passdata(shoe)">Add To Cart</button> -->
+                        <button  class="btn btn-danger" (click)="remove(i)">Remove</button>
+                      </div>
+                    </div>
+                    </div>
+        </div> 
+ </div>
+    
+  
+  
+  
